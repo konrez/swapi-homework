@@ -1,0 +1,155 @@
+body {
+  background: url(./images/bg.jpg);
+  color: #fff;
+  font-family: "Arial", sans-serif;
+}
+
+.sw-logo {
+  display: flex;
+  justify-content: center;
+  scale: 0.5;
+  margin-top: -100px;
+  margin-bottom: -100px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+.chart-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#chart_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #111;
+}
+
+tr:hover {
+  background-color: #222;
+}
+
+.module {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.module-content {
+  background-color: #111;
+  margin: 20% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 300px;
+  text-align: center;
+}
+
+.module-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  position: absolute;
+  top: 46px;
+}
+
+.details-list {
+  flex: 1;
+  padding: 10px;
+  background-color: #111;
+  overflow-y: auto;
+}
+
+.details-view {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  bottom: 0;
+  width: 100px;
+  padding: 10px;
+  background-color: #111;
+  display: none;
+  overflow-y: auto;
+}
+
+.closeButton {
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+}
+
+.pagination input[type="number"] {
+  width: 50px;
+  text-align: center;
+}
+.pagination select {
+  margin-left: 10px;
+}

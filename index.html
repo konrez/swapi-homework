@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+  <title>Star Wars Homework</title>
+</head>
+<body>
+  <audio id="button-sound">
+    <source src="./audio/lightsaber3-87667.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="yes-master">
+    <source src="./audio/yesmy-master-41486.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="sw-logo">
+    <img src="./images/sw_logo.svg.png"/>
+  </div>
+  <div class="wrapper">
+    <div id="buttons"></div>
+    <div class="chart_container"></div>
+  </div>
+
+  <div id="confirmationModule" class="module">
+    <div class="module-content">
+      <h3>Are you sure?</h3>
+      <div class="module-actions">
+        <button id="confirmDelete">YES</button>
+        <button id="cancelDelete">NO</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="details">
+    <div class="details-list"></div>
+    <div class="details-view">
+      <button class="closeButton">Close</button>
+    </div>
+  </div>
+  
+  <div class="pagination">
+    <button id="previousButton">PREVIOUS</button>
+    <span>Page: <span id="currentPage"></span></span>
+    <button id="nextButton">NEXT</button>
+    <div>
+      Go to page: <input type="number" id="pageNumberInput" min="1" />
+      <button id="goToPageButton">GO</button>
+    </div>
+  </div>
+</body>
+</html>
